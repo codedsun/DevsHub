@@ -3,8 +3,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#361735"
     tools:context="com.example.suneet.devshub.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_height="200dp"
+            android:background="#2C1A52"
+            android:src="@drawable/github_icon"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:background="#2C1A52"
+            android:src="@drawable/bitbucket_icon"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="#2C1A52"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:src="@drawable/sourceforge_icon"/>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="#2C1A52"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/gitlab_icon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/code_icon"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:textColor="#FFFFFF"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:text="Git Pull,Push,Commit!Under One App"/>
+    </LinearLayout>
+
 
 
 </LinearLayout>
+
